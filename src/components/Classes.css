@@ -1,0 +1,371 @@
+.HomeBackground{
+    background-color: blue;
+    height: 913px;
+    top: 0px;
+    right: 0px;
+    position: relative;
+}
+
+.RoundBox{
+    border-radius: 50%;
+    background-color: white;
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    top: -120%;
+    right: -110%;
+}
+
+.Scritta{
+    position: absolute;
+    left: 20%;
+    bottom: 18%;
+    width: 100%;
+    /* justify-content: right;
+    align-items: right; */
+}
+
+.Scritta1{
+    position: absolute;
+    bottom: 25%;
+    font-size: 5rem;
+}
+
+.LogoContainer{
+    /* height: 160px; */
+}
+
+.Scritta2{
+    position: absolute;
+    margin-left: 15%;
+    bottom: -15rem;
+    /* font-size: 5rem; */
+}
+
+.ButtonGo{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.ButtonGo:hover{
+    cursor: pointer;
+}
+
+.ButtonBack{
+    background-color: transparent;
+    border: none;
+}
+
+.ButtonBack:hover{
+    cursor: pointer;
+}
+
+.ButtonGo:hover > #icon{
+    animation: swipeRight 1s linear infinite;
+}
+
+.Go{
+    font-size: 2rem;
+}
+
+.GoIcon{
+    position: absolute;
+}
+
+/* .GoIcon{
+    animation: swipeRight 1s linear infinite;
+} */
+
+@keyframes swipeRight {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 65%;
+    }
+    100% {
+        left: 90%;
+    }
+}
+
+.All{
+    overflow-y: auto;
+    height: 1000px;
+    background-color: rgb(29, 29, 41);
+    scroll-behavior: smooth;
+    
+}
+
+.ZIndexed:hover{
+    z-index: 9999;
+}
+
+.ContainerCategories{
+    /* display: flex; */
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.ContainerItems{
+    /* display: flex; */
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2.2rem;
+    padding-right: 1rem;
+}
+
+.SliderItems{
+    display: flex;
+    height: 300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.SliderItemsGrid{
+    display: flex;
+    height: 70px;
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+}
+
+#items {
+    margin-top: 100%;
+    padding-bottom: 25%;
+   }
+
+.ContainerItems{
+    /* background-color: aliceblue; */
+    /* position: inherit; */
+}
+
+.Button{
+    border: none;
+    background-color: transparent;
+}
+
+.Button:hover{
+    cursor: pointer;
+}
+
+.ContentStyle{
+    color: '#fff';
+    text-align: 'center';
+    background: 'transparent';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0.55rem;
+    display: none;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-radius: 100px;
+}
+
+/* .ContainerCategories:hover{
+    z-index: 9999;
+    position: fixed;
+} */
+
+.ImageContent{
+    color: #fff;
+    height: 160px;
+    text-align: -webkit-center;
+    background: transparent;
+    padding: 1.5rem;
+}
+
+.ImageContentGrid{
+    color: #fff;
+    height: 20px;
+    text-align: -webkit-center;
+    background: transparent;
+    /* padding: 0.2rem; */
+}
+
+.ArrowRight{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ArrowRight{
+}
+
+.MoveLeftTitle{
+    text-align: center
+}
+
+.MoveLeft:hover .MoveLeftTitle{
+    margin-right: 70%;
+}
+
+.MoveLeft:hover {
+    text-align: left
+}
+
+.ButtonRight{
+    background-color: transparent;
+    border: none;
+}
+
+.ButtonRight:hover{
+    cursor: pointer;
+}
+
+.HideScroll{
+    /* overflow-x: scroll; */
+    display: flex;
+}
+
+.ChangeColor{
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.ScrollPage{
+    margin-top: auto;
+    /* background-color: white; */
+}
+
+.ScrollPage:hover{
+    transform: scale(2);
+    cursor: pointer;
+    animation: categoryZoom 0.4s linear;
+    z-index: 9999;
+}
+
+.ScrollPageItem:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    animation: itemZoom 0.4s linear;
+    z-index: 9999;
+}
+
+@keyframes categoryZoom {
+    0% {
+        transform: scale(1);
+        z-index: 9999;
+    }
+    50% {
+        transform: scale(1.5);
+        z-index: 9999;
+    }
+    100% {
+        transform: scale(2);
+        z-index: 9999;
+        /* transform-origin: top; */
+    }
+}
+
+@keyframes itemZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.5);
+        /* transform-origin: top; */
+    }
+}
+
+.NameContainer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* max-width: 5rem; */
+}
+
+.Scene {
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.Cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    animation: Cube-spin infinite 10s linear;
+}
+
+.Faces{
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.Face-up{
+    background-color: rgba(255, 0, 0, 0.657);
+    position: absolute;
+    transform: rotateY(  0deg) translateZ(100px);
+}
+
+.Face-down{
+    background-color: rgba(0, 60, 255, 0.657);
+    position: absolute;
+    transform: rotateY(  90deg) translateZ(100px);
+}
+
+.Face-left{
+    background-color: rgba(229, 255, 0, 0.657);
+    position: absolute;
+    transform: rotateY(  180deg) translateZ(100px);
+}
+
+.Face-right{
+    background-color: rgba(255, 166, 0, 0.657);
+    position: absolute;
+    transform: rotateY(  -90deg) translateZ(100px);
+}
+
+.Face-front{
+    background-color: rgba(0, 255, 34, 0.657);
+    position: absolute;
+    transform: rotateX(  90deg) translateZ(100px);
+}
+
+.Face-back{
+    background-color: rgba(255, 0, 212, 0.657);
+    position: absolute;
+    transform: rotateX(  -90deg) translateZ(100px);
+}
+
+@keyframes Cube-spin {
+    0% {
+        transform: rotate3d(0deg) scale(0.2);
+    }
+    25% {
+        transform: rotate3d(1,1,1,45deg) scale(0.6);
+    }
+    50% {
+        transform: rotate3d(2,-1,-1,-0.2turn) scale(1);
+    }
+    75% {
+        transform: rotate3d(0, 1, 0.5, 3.142rad) scale(0.6);
+    }
+    100% {
+        transform: rotate3d(0deg) scale(0.2);
+    }
+}

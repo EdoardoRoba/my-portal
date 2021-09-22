@@ -1,0 +1,15 @@
+.Header{
+    background-color: blue;
+    height: 5rem;
+    z-index: 9999;
+    /* font-size: xx-large; */
+}
+
+.MenuIcon {
+    color: white;
+    margin-top: 40%;
+}
+
+.Button{
+    /* height: inherit; */
+}
