@@ -6,7 +6,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
 import MyComponent from './components/MyComponent';
 import Header from './ui/Header'
 import CarouselComponent from './components/CarouselComponent'
