@@ -1,14 +1,19 @@
 .HomeBackground{
     background-color: blue;
-    height: 913px;
-    top: 0px;
-    right: 0px;
+    /* height: 800px; */
+    /* top: 0px;
+    right: 0px; 
+    position: relative; */
+}
+
+body{
+    background-color: white;
     position: relative;
 }
 
 .RoundBox{
     border-radius: 50%;
-    background-color: white;
+    background-color: blue;
     height: 200%;
     width: 200%;
     position: absolute;
@@ -28,7 +33,9 @@
 .Scritta1{
     position: absolute;
     bottom: 25%;
-    font-size: 5rem;
+    right: 78%;
+    font-size: 4rem;
+    color: white;
 }
 
 .LogoContainer{
@@ -38,7 +45,9 @@
 .Scritta2{
     position: absolute;
     margin-left: 15%;
-    bottom: -15rem;
+    margin-top: 3rem;
+    right: 78%;
+    color: white;
     /* font-size: 5rem; */
 }
 
@@ -46,7 +55,7 @@
     position: absolute;
     bottom: 20%;
     left: 10%;
-    color: white;
+    color: blue;
     background-color: transparent;
     border: none;
 }
@@ -125,7 +134,7 @@
 
 .SliderItems{
     display: flex;
-    height: 300px;
+    height: auto;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -180,7 +189,7 @@
 
 .ImageContent{
     color: #fff;
-    height: 160px;
+    height: 120px;
     text-align: -webkit-center;
     background: transparent;
     padding: 1.5rem;
@@ -246,9 +255,9 @@
 }
 
 .ScrollPageItem:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     cursor: pointer;
-    animation: itemZoom 0.4s linear;
+    animation: itemZoom 0.1s linear;
     z-index: 9999;
 }
 
@@ -273,10 +282,10 @@
         transform: scale(1);
     }
     50% {
-        transform: scale(1.25);
+        transform: scale(1.05);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.1);
         /* transform-origin: top; */
     }
 }
